@@ -4,6 +4,14 @@ iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool
 Summary
 -------
 
+NOTE: This source code is forked from the original at
+https://github.com/esnet/iperf
+Changes have been made to compile and run on Android 4.3 with kernel 
+3.0.35.  It should be compatible with other versions of Android as 
+well.  The original build instructions do not need to be followed as
+the Android.mk file will take care of building it.
+Following is the original README.md ....
+
 iperf is a tool for active measurements of the maximum achievable
 bandwidth on IP networks.  It supports tuning of various parameters
 related to timing, protocols, and buffers.  For each test it reports
