@@ -2,7 +2,9 @@ LOCAL_PATH:= $(call my-dir)
 
 SOURCES := \
 	src/cjson.c		\
+	src/dscp.c              \
 	src/iperf_api.c	    	\
+	src/iperf_auth.c        \
 	src/iperf_client_api.c  \
 	src/iperf_error.c	\
 	src/iperf_locale.c	\
@@ -14,7 +16,6 @@ SOURCES := \
 	src/main.c		\
 	src/net.c		\
 	src/tcp_info.c	    	\
-	src/tcp_window_size.c   \
 	src/timer.c		\
 	src/units.c
 

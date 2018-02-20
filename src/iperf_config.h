@@ -1,4 +1,4 @@
-/* src/iperf_config.h.  Generated from iperf_config.h.in by configure (by JTS on Scorpion with Ubuntu 12).  */
+/* src/iperf_config.h.  Generated from iperf_config.h.in by configure (by JTS on PDIES2 with Ubuntu 14.04).  */
 /* src/iperf_config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if you have the `cpuset_setaffinity' function. */
@@ -7,11 +7,20 @@
 /* Have CPU affinity support. */
 #define HAVE_CPU_AFFINITY 1
 
+/* Define to 1 if you have the `daemon' function. */
+#define HAVE_DAEMON 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
+/* Define to 1 if you have the <endian.h> header file. */
+#define HAVE_ENDIAN_H 1
+
 /* Have IPv6 flowlabel support. */
 #define HAVE_FLOWLABEL 1
+
+/* Define to 1 if you have the `getline' function. */
+#define HAVE_GETLINE 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -22,6 +31,9 @@
 /* Define to 1 if you have the <netinet/sctp.h> header file. */
 /* #undef HAVE_NETINET_SCTP_H */
 
+/* Define to 1 if you have the <poll.h> header file. */
+#define HAVE_POLL_H 1
+
 /* Define to 1 if you have the `sched_setaffinity' function. */
 #define HAVE_SCHED_SETAFFINITY 1
 
@@ -31,8 +43,14 @@
 /* Define to 1 if you have the `sendfile' function. */
 #define HAVE_SENDFILE 1
 
+/* Define to 1 if you have the `SetProcessAffinityMask' function. */
+/* #undef HAVE_SETPROCESSAFFINITYMASK */
+
 /* Have SO_MAX_PACING_RATE sockopt. */
-/* #undef HAVE_SO_MAX_PACING_RATE */
+/* #define HAVE_SO_MAX_PACING_RATE 1 --Android doesn't have this - JTS */
+
+/* OpenSSL Is Available */
+/* #undef HAVE_SSL */
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -48,6 +66,9 @@
 
 /* Define to 1 if the system has the type `struct sctp_assoc_value'. */
 /* #undef HAVE_STRUCT_SCTP_ASSOC_VALUE */
+
+/* Define to 1 if you have the <sys/endian.h> header file. */
+/* #undef HAVE_SYS_ENDIAN_H */
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
 #define HAVE_SYS_SOCKET_H 1
@@ -77,7 +98,7 @@
 #define PACKAGE_NAME "iperf"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "iperf 3.1"
+#define PACKAGE_STRING "iperf 3.4+"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "iperf"
@@ -86,13 +107,13 @@
 #define PACKAGE_URL "http://software.es.net/iperf/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "3.1"
+#define PACKAGE_VERSION "3.4+"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "3.1"
+#define VERSION "3.4+"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
