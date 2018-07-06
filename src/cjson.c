@@ -204,8 +204,13 @@ CJSON_PUBLIC(void) cJSON_Delete(cJSON *item)
 /* get the decimal point character of the current locale */
 static unsigned char get_decimal_point(void)
 {
+
+#if __ANDROID_API__ < 21  /* Check for older versions of bionic that lack localeconv()*/
+    return '.';
+#else
     struct lconv *lconv = localeconv();
     return (unsigned char) lconv->decimal_point[0];
+#endif
 }
 
 typedef struct
